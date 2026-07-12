@@ -147,3 +147,40 @@
             box-shadow: 0 0 20px #5e0000;
             transform: translateY(-3px);
         }
+
+        #projects-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .project-card {
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            background: #270000;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h2 {
+            margin-top: 0;
+        }
+
+        .project-card a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
