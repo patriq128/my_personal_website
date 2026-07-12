@@ -37,13 +37,20 @@
             object-fit:cover;
         }
 
-        .button{
-            text-decoration:none;
-            color:white;
-            padding:12px 22px;
-            border-radius:12px;
-            background:#220d0d;
-            transition:.25s;
+        .button_container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .button {
+            text-decoration: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 12px;
+            background: #220d0d;
+            transition: .25s;
         }
 
         .button:hover{
@@ -81,25 +88,45 @@
             box-shadow:0 0 25px rgba(255,0,0,.12);
         }
 
-        @media (max-width:700px){
-            .nav{
-                height:70px;
-                padding:0 15px;
+        .hamburger{
+            display:none;
+            background:#220d0d;
+            color:white;
+            border:none;
+            font-size:30px;
+            padding:5px 12px;
+            border-radius:12px;
+        }
+
+        .nav_links {
+            transition:.3s;
+            display:flex;
+            gap: 15px;
+        }
+
+        @media(max-width:700px){
+
+            .hamburger{
+                display:block;
             }
 
-            #profile_icon{
-                width:45px;
-                height:45px;
-            }
-
-            .button{
-                padding:10px 15px;
-                font-size:14px;
-            }
-
-            .text_window{
+            .nav_links{
+                display:none;
+                position:absolute;
+                top:80px;
+                left:0;
+                width:100%;
+                flex-direction:column;
+                align-items:center;
                 padding:20px;
+                background:#0c0c0c;
+                border-radius:0 0 20px 20px;
             }
+
+            .nav_links.active{
+                display:flex;
+            }
+
         }
 
         html {
@@ -127,11 +154,6 @@
             padding: 100px 20px;
 
             scroll-margin-top: 60px;
-        }
-
-        .nav_links {
-            display:flex;
-            gap: 15px;
         }
 
         .nav_button {
@@ -169,11 +191,9 @@
 
         .project-card:hover {
             transform: translateY(-5px);
+            transition: 0.25s;
         }
 
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
 
         .project-card h2 {
             margin-top: 0;

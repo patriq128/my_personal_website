@@ -10,24 +10,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>My personal website :3</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
 </head>
 <body>
 
 <div class="nav">
+
     <img src="profile.jpg" id="profile_icon" alt="Profile">
-    <div class="nav_links">
+
+    <button class="hamburger" id="hamburger">
+        ☰
+    </button>
+
+    <div class="nav_links" id="nav_links">
         <a class="nav_button" href="#home">Home</a>
         <a class="nav_button" href="#about">About</a>
         <a class="nav_button" href="#projects">Projects</a>
         <a class="nav_button" href="#socials">Socials</a>
     </div>
+
     <a class="button"
        href="https://github.com/patriq128"
        target="_blank">
         My GitHub
     </a>
+
 </div>
 
 <section id="home">
@@ -38,63 +46,113 @@
             </h1>
         </div>
         <div class="text_window">
-                <div class="section_name">
-                    <h1 class="manufacturing-consent-regular">
+            <div class="section_name">
+                <h1 class="manufacturing-consent-regular">
                     Home
-                    </h1>
-                </div>
-                <p>So hi!</p> 
-                <p>My nickname is <strong>ZiDi</strong> and this is website of me.</p>
-
-                <p>You can go on diferent sections and get more informations and projects of me.</p>
+                </h1>
+            </div>
+            <p>Hey there! </p>
+            <p>
+                My nickname is <strong>ZiDi</strong>, and this is my personal website.
+            </p>
+            <p>
+                Here you can explore different sections, learn more about me,
+                and check out some of the projects I have built.
+            </p>
         </div>
     </div>
 </section>
 
 <section id="about">
     <div class="text_window">
-            <div class="section_name">
-                <h1 class="manufacturing-consent-regular">
-                    About me
-                </h1>
-            </div>
-            <p>I am 15 years old. I am from small village in Slovakia.</p>
-            <p>I started programing and building when I was 8 years old I think and its the best thing that can happend in my life.</p>
-            <p>A lot of time I am sitting behind computer and building a lot of projects. I dont care if someone whould like them I just build them.</p>
-            <h2>And now something me</h2>
-            <p>Soooo.... where should I start... I know my favourite music artists: </p>
-            <p>There are my top 5 artists</p>
-            <p>But there are like 10 more :)</p>
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/0I7VmE5LkRmWoHltutTUh9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/4waORdvuFnffJPrj784KeG?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/1oYXEVbGh1L7EWGm9C68cN?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/5jLQxZDFd3vrRb7t8OETCA?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/765caWhYCY7Yiw5F6jZZHg?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="section_name">
+            <h1 class="manufacturing-consent-regular">
+                About me
+            </h1>
         </div>
+        <p>
+            I am 15 years old and I come from a small village in Slovakia.
+        </p>
+        <p>
+            I started programming and building things when I was around 8 years old,
+            and it became one of the best things that ever happened to me.
+        </p>
+        <p>
+            Most of my free time is spent behind a computer, creating new projects,
+            experimenting with ideas, and learning new things.
+        </p>
+        <p>
+            I don't build things just because other people might like them.
+            I build because I enjoy creating and exploring new possibilities.
+        </p>
+        <h2>A little more about me</h2>
+        <p>
+            Sooo... where should I start? :D
+            One thing you should know about me is my love for music.
+        </p>
+        <p>
+            Here are my top 5 favorite artists:
+        </p>
+        <p>
+            (There are many more artists I listen to, but these are some of my favorites.)
+        </p>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/0I7VmE5LkRmWoHltutTUh9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/4waORdvuFnffJPrj784KeG?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/1oYXEVbGh1L7EWGm9C68cN?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/5jLQxZDFd3vrRb7t8OETCA?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/765caWhYCY7Yiw5F6jZZHg?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
 </section>
 
 <section id="projects">
     <div class="text_window">
-            <div class="section_name">
-                <h1 class="manufacturing-consent-regular">
-                    My Projects
-                </h1>
-            </div>
-                <div id="projects-container"></div>
+        <div class="section_name">
+            <h1 class="manufacturing-consent-regular">
+                My Projects
+            </h1>
+        </div>
+        <p>
+            Here you can find some of my GitHub repositories and projects.
+        </p>
+        <p>
+            Not every project is finished yet, but I am constantly improving them
+            and adding new features.
+        </p>
+        <div id="projects-container"></div>
+        <p>
+            Yeah... I know there are quite a lot of them :)
+        </p>
     </div>
 </section>
 
 <section id="socials">
     <div class="text_window">
-        <p>
             <div class="section_name">
                 <h1 class="manufacturing-consent-regular">
                     Social Medias
                 </h1>
             </div>
-            Welcome to my website. Here you will find my projects,
-            GitHub repositories and things I build.
-        </p>
+           <p>You can find me on these platforms:</p>
+           <div class="button_container">
+                <a class="button"
+                href="https://www.instagram.com/zidi128._?igsh=MTNpa25rbnhkOTRmdA=="
+                target="_blank">
+                Instagram: Public
+                </a>
+            
+                <a class="button"
+                href="https://www.instagram.com/patri_kamin128?igsh=dngzYmptZTNxOXNq"
+                target="_blank">
+                Instagram: Private
+                </a>
+
+                <a class="button"
+                href="https://www.tiktok.com/@patrikkamidra?_r=1&_t=ZN-97yZg7PkKla"
+                target="_blank">
+                Tiktok
+                </a>
+
+            </div>
     </div>
 </section>
 
