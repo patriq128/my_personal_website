@@ -3,34 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> My personal website :3 </title>
-</head>
-<style>
-    .panel {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color: #e493dd;
-    } 
 
-    .intro {
-        height: 20vh;
-        width: 100%;
-        font-size: 20px;
-        text-align: center;
-        color: white;
-        background-color:#ce6fc6
-    }
-</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My personal website :3</title>
+
+</head>
 <body>
+
+<div class="nav">
+    <img src="profile.jpg" id="profile_icon" alt="Profile">
+    <div class="nav_links">
+        <a class="nav_button" href="#home">Home</a>
+        <a class="nav_button" href="#about">About</a>
+        <a class="nav_button" href="#projects">Projects</a>
+        <a class="nav_button" href="#socials">Socials</a>
+    </div>
+    <a class="button"
+       href="https://github.com/patriq128"
+       target="_blank">
+        My GitHub
+    </a>
+</div>
+
+<section id="home">
     <div class="panel">
         <div class="intro">
-            <img src="profile.jpg" alt="profile_icon" width="100vh" height="100vh">
-            <H1> Welcome to my personal website :3 </H1>
+            <h1 class="manufacturing-consent-regular">
+                Welcome to my personal website :3
+            </h1>
+        </div>
+        <div class="text_window">
+                <div class="section_name">
+                    <h1 class="manufacturing-consent-regular">
+                    Home
+                    </h1>
+                </div>
+                <p>So hi!</p> 
+                <p>My nickname is <strong>ZiDi</strong> and this is website of me.</p>
+
+                <p>You can go on diferent sections and get more informations and projects of me.</p>
         </div>
     </div>
+</section>
+
+<section id="about">
+    <div class="text_window">
+            <div class="section_name">
+                <h1 class="manufacturing-consent-regular">
+                    About me
+                </h1>
+            </div>
+            <p>I am 15 years old. I am from small village in Slovakia.</p>
+            <p>I started programing and building when I was 8 years old I think and its the best thing that can happend in my life.</p>
+            <p>A lot of time I am sitting behind computer and building a lot of projects. I dont care if someone whould like them I just build them.</p>
+            <h2>And now something me</h2>
+            <p>Soooo.... where should I start... I know my favourite music artists: </p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/0I7VmE5LkRmWoHltutTUh9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="text_window">
+        <p>
+            <div class="section_name">
+                <h1 class="manufacturing-consent-regular">
+                    My Projects
+                </h1>
+            </div>
+                Welcome to my website. Here you will find my projects,
+                GitHub repositories and things I build.
+        </p>
+    </div>
+</section>
+
+<section id="socials">
+    <div class="text_window">
+        <p>
+            <div class="section_name">
+                <h1 class="manufacturing-consent-regular">
+                    Social Medias
+                </h1>
+            </div>
+            Welcome to my website. Here you will find my projects,
+            GitHub repositories and things I build.
+        </p>
+    </div>
+</section>
+
 </body>
 </html>
-
