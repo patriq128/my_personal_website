@@ -4,9 +4,7 @@ This is my personal website built from scratch using HTML, CSS, and JavaScript.
 
 The website was created with a dark theme using black and blood-red colors to create a unique and modern design.
 
-Live website:
-
-https://zidi-site.netlify.app
+[Live Demo](https://zidi-site.netlify.app)
 
 ## Features
 
